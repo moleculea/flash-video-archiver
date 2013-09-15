@@ -1,0 +1,18 @@
+Prerequisites:
+	Perl module: WWW::Mechanize
+	get-flash-videos: https://code.google.com/p/get-flash-videos/wiki/Installation
+	ffmpeg: http://www.ffmpeg.org/download.html
+
+
+Installation:
+	Install Perl module:
+		$ sudo cpan install WWW::Mechanize
+
+	Install prerequisite utilities (get_flash_videos and ffmpeg) into system path.
+	e.g.:
+		$ ln -s /usr/local/bin/get_flash_videos /path/to/get_flash_videos
+
+Usage:
+	Put video watch links into a file, e.g. videos.txt, one link a line.
+	$ ./fetch.sh /path/to/videos.txt /path/to/output/directory
+	$ ./convert.sh /path/to/output/directory
